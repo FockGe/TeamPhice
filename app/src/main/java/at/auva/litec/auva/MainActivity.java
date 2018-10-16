@@ -1,4 +1,4 @@
-package at.ac.litec.phice.auva;
+package at.auva.litec.auva;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

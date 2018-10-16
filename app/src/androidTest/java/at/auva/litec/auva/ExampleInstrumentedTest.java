@@ -1,4 +1,4 @@
-package at.ac.litec.phice.auva;
+package at.auva.litec.auva;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("at.ac.litec.phice.auva", appContext.getPackageName());
+        assertEquals("at.auva.litec.auva", appContext.getPackageName());
     }
 }

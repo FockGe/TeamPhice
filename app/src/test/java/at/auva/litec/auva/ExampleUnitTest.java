@@ -1,4 +1,4 @@
-package at.ac.litec.phice.auva;
+package at.auva.litec.auva;
 
 import org.junit.Test;
 
