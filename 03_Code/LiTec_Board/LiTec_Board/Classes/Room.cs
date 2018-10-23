@@ -15,15 +15,18 @@ namespace LiTec_Board
         public HashSet<int> Maschines = new HashSet<int>();
         public string RoomNumber { get; set; }
 
-        public Room(int id, string description, string emergencyPlan, string firstResponders, string guestInfo,string roomNumber)
+        public Room(int id, string description, string emergencyPlan, string firstResponders, string guestInfo, string roomNumber)
         {
             Id = id;
-            Description = description;
-            EmergencyPlan = emergencyPlan;
-            FirstResponders = firstResponders;
-            GuestInfo = guestInfo;
-            RoomNumber = roomNumber;
+            Description = description ?? throw new ArgumentNullException(nameof(description));
+            EmergencyPlan = emergencyPlan ?? throw new ArgumentNullException(nameof(emergencyPlan));
+            FirstResponders = firstResponders ?? throw new ArgumentNullException(nameof(firstResponders));
+            GuestInfo = guestInfo ?? throw new ArgumentNullException(nameof(guestInfo));
+            RoomNumber = roomNumber ?? throw new ArgumentNullException(nameof(roomNumber));
         }
+
+
+
 
         
 
