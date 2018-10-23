@@ -187,7 +187,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Classes\Machine.cs" />
-    <Compile Include="MachineType.cs" />
+    <Compile Include="Classes\MachineType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Room.cs" />
     <Compile Include="Site.Master.cs">
@@ -206,7 +206,7 @@
     </Compile>
     <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\Usertype.cs" />
-    <Compile Include="Usergroup.cs" />
+    <Compile Include="Classes\Usergroup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,7 +214,7 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Warning.cs" />
+    <Compile Include="Classes\Warning.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
