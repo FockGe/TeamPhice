@@ -1,0 +1,59 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Homepage.aspx.cs" Inherits="Login.Homepage" %>
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>AUVA - QR Scanner</title>
+    <link href="Style2.css" rel="stylesheet" />
+       <script type="text/javascript" src="/jss/jsqrscanner.nocache.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">    
+    <section>
+  
+        <div class="sec2">
+            <div class="container">
+                <div class="content">  
+
+                    <h2>Willkommen,  <asp:Label ID="lblname" runat="server" Text="Label"></asp:Label>.</h2>
+
+					<div id="scannedTextMemo"></div>
+					<div id="scanner"></div>
+					
+						<script type="text/javascript">
+						function onQRCodeScanned(scannedText)
+						{
+						    console.log(scannedText + "la");
+							var scannedTextMemo = document.getElementById("scannedTextMemo");
+							scannedTextMemo.innerText = scannedText;
+						}
+		  
+						//this function will be called when JsQRScanner is ready to use
+						function JsQRScannerReady()
+						{
+							//create a new scanner passing to it a callback function that will be invoked when
+							//the scanner succesfully scan a QR code
+							var jbScanner = new JsQRScanner(onQRCodeScanned);
+							//reduce the size of analyzed images to increase performance on mobile devices
+							jbScanner.setSnapImageMaxSize(300);
+							var scannerParentElement = document.getElementById("scanner");
+							if(scannerParentElement)
+							{
+								//append the jbScanner to an existing DOM element
+								jbScanner.appendTo(scannerParentElement);
+							}        
+						}
+					  </script> 
+                      
+                   
+                </div>
+                
+            </div>
+        </div>
+        </section>
+    </form>
+
+</body>
+</html>
