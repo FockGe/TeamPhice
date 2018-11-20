@@ -94,7 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Homepage.aspx" />
+    <Content Include="Homepage.html" />
     <Content Include="jss\12E40ABFCAAFA2D8A05A3F45372D06BC.cache.js" />
     <Content Include="jss\7058F016865F1444357DCF90509C7E98.cache.js" />
     <Content Include="jss\B532310AEF69853F34943ECEF0F5E5E2.cache.js" />
@@ -102,11 +102,12 @@
     <Content Include="jss\compilation-mappings.txt" />
     <Content Include="jss\F576DDE3CF8B9623ADBA2925081F5878.cache.js" />
     <Content Include="jss\jsqrscanner.nocache.js" />
-    <Content Include="Login.aspx" />
+    <Content Include="login.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\ftp.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -120,23 +121,11 @@
     <Content Include="Stock\login.png" />
     <Content Include="Style.css" />
     <Content Include="Style2.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Homepage.aspx.cs">
-      <DependentUpon>Homepage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Homepage.aspx.designer.cs">
-      <DependentUpon>Homepage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
